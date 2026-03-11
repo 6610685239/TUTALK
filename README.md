@@ -141,6 +141,8 @@ A social matchmaking feature to find people for activities, hangouts, and events
 <img width="1092" height="538" alt="Screenshot 2026-03-11 200242" src="https://github.com/user-attachments/assets/4baad7f4-574a-4715-ba01-b621391667df" />
 <img width="1047" height="518" alt="Screenshot 2026-03-11 200446" src="https://github.com/user-attachments/assets/71dcf14b-5540-4274-90e9-c093a4d566c4" />
 <img width="1081" height="518" alt="Screenshot 2026-03-11 200621" src="https://github.com/user-attachments/assets/ddb7f78a-2f40-43ec-89dd-874c2e4044d8" />
+<img width="1920" height="944" alt="image" src="https://github.com/user-attachments/assets/d7ed610b-be93-4e6e-9123-b7efcbe64ece" />
+
 
 ---
 
