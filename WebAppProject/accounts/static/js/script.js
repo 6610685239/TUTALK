@@ -2,7 +2,7 @@ document.querySelectorAll('.toggle-password').forEach((toggleIcon) => {
     toggleIcon.addEventListener('click', () => {
         const passwordField = toggleIcon.previousElementSibling; // Get the associated password field
 
-        // Toggle password visibility
+        // Password Visibility
         if (passwordField.type === 'password') {
             passwordField.type = 'text';
             toggleIcon.classList.replace('fa-eye-slash', 'fa-eye'); // Update icon to "eye"
@@ -14,20 +14,17 @@ document.querySelectorAll('.toggle-password').forEach((toggleIcon) => {
 });
 
 
-// Function to show the modal after registration is successful
+// Show the modal   
 function showModal() {
     document.getElementById('registrationModal').style.display = "block";
 }
 
-// Function to close the modal when clicking on the "X" button
+// Close the modal
 function closeModal() {
     document.getElementById('registrationModal').style.display = "none";
 }
 
-// If registration is successful, you can trigger the showModal() function like this
-// showModal(); (this is done after the form is validated and user is registered)
-
-// Optionally, if you want the modal to close when the user clicks anywhere outside of the modal
+// Clicks outside the modal
 window.onclick = function(event) {
     var modal = document.getElementById("registrationModal");
     if (event.target == modal) {
