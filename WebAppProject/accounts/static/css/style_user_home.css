@@ -9,16 +9,12 @@
 }
 
 body {
-    
     background-color: #f4f5f7;
     display: flex;
 }
 
-
-/* Navigation Bar */
 .navbar {
     background-color: #D32F2F;
-    /* สีแดง */
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -38,56 +34,6 @@ body {
     color: #fff;
     margin-right: auto;
 }
-.navbar .post-form {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex: 1;
-    justify-content: center;
-}
-
-.navbar .post-form input[type="text"] {
-    width: 100%;
-    max-width: 300px;
-    padding: 8px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-}
-
-.navbar .post-form input[type="file"] {
-    display: none;
-    /* ซ่อนช่องเลือกไฟล์จริง */
-}
-
-.navbar .post-form label {
-    background-color: #D32F2F;
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.navbar .post-form label:hover {
-    background-color: #B71C1C;
-}
-
-.navbar .post-form button {
-    padding: 8px 16px;
-    background-color: #D32F2F;
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.navbar .post-form button:hover {
-    background-color: #B71C1C;
-}
 
 .navbar .nav-links {
     display: flex;
@@ -106,7 +52,6 @@ body {
     color: #ddd;
 }
 
-/* Left Menu */
 .left-menu {
     width: 200px;
     padding: 20px;
@@ -115,19 +60,7 @@ body {
     position: fixed;
     top: 60px;
     left: 0;
-    color: #030303;
-    font-family: 'Roboto', sans-serif;
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-}
-
-.left-menu .search-bar input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    outline: none;
-    font-size: 1rem;
-    margin-bottom: 15px;
 }
 
 .left-menu a {
@@ -141,12 +74,12 @@ body {
     transition: background-color 0.3s;
 }
 
-.left-menu a:hover {
+.left-menu a:hover,
+.left-menu a.active {
     background-color: #D32F2F;
     color: #ffffff;
 }
 
-/* Main Content */
 .main-content {
     margin-top: 100px;
     padding: 20px;
@@ -179,119 +112,32 @@ body {
     color: #6b7280;
 }
 
-/* Right Menu */
-.right-menu {
-    width: 250px;
-    padding: 20px;
-    background-color: #ffffff;
-    height: calc(100vh - 60px);
-    position: fixed;
-    top: 60px;
-    right: 0;
-    color: #030303;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-}
-
-.right-menu h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #D32F2F;
-}
-
-.right-menu .post {
-    background-color: #ffffff;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-
-.links a {
-    font-size: 30px;  /* Increase size of the icons */
-    margin-right: 15px; /* Space between icons */
-    color: #d32f2f; /* Red color for icons */
-    text-decoration: none; /* Remove underline */
-}
-
-.links a:hover {
-    color: #fff; /* Change icon color on hover */
-}
-
-.links i {
-    display: inline-block;
-    font-size: 35px; /* Icon size */
-}
-
-.footer {
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    padding: 10px 0; /* Add some padding for spacing */
-    background: #d32f2f; /* Red background for the footer */
-    color: #fff; /* White color for text */
-    font-size: 14px; /* Set text size */
-    z-index: 10; /* Ensure it stays on top of other content */
-}
-
-.footer {
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    padding: 5px 0; 
-    background: #d32f2f; 
-    color: #fff; 
-    font-size: 12px; 
-    height: 30px; 
-    z-index: 100; 
-}
-
-.footer p {
-    margin: 0; 
-}
-
-/* child elements in footer */
-.footer, .footer * {
-    color: #fff !important;
-}
-
-/* alert */
-
+/* Alert boxes */
 .alert-box {
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 15px;
-    color: white;
-    background-color: #fff3cd;
-    border: 1px solid #ffeeba;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .alert-box.caution {
-    background-color: #fff8c4; /* Light yellow */
-    color: #856404; /* Dark yellow for text */
-    border: 2px solid #ffeeba; /* Slightly darker yellow for the border */
-    box-shadow: 0 4px 8px rgba(255, 255, 0, 0.2); /* Yellow shadow for prominence */
-    font-size: 16px;
-    font-weight: bold;
+    background-color: #fff8c4;
+    color: #856404;
+    border: 2px solid #ffeeba;
 }
 
 .alert-box.emergency {
-    background-color: #ffcccc; /* Light red */
-    color: #721c24; /* Dark red for text */
-    border: 2px solid #f5c6cb; /* Slightly darker red for the border */
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2); /* Red shadow for prominence */
-    font-size: 16px;
-    font-weight: bold;
+    background-color: #ffcccc;
+    color: #721c24;
+    border: 2px solid #f5c6cb;
 }
 
 .alert-box h3 {
-    font-size: 30px; /* Larger heading size */
+    font-size: 30px;
     margin-bottom: 10px;
     padding-bottom: 5px;
-    border-bottom: 2px solid currentColor; /* Uses text color for divider */
-    text-transform: uppercase; /* Makes heading stand out */
+    border-bottom: 2px solid currentColor;
+    text-transform: uppercase;
 }
 
 .alert-box p {
@@ -300,16 +146,36 @@ body {
     color: #000000;
 }
 
-/* Add hover effect for better user experience */
 .alert-box:hover {
-    transform: scale(1.02); /* Slightly enlarges on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Timestamp Styling */
 .alert-box .timestamp {
     display: block;
     margin-top: 10px;
     font-size: 12px;
-    color: rgba(0, 0, 0, 0.6); /* Subtle timestamp color */
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 5px 0;
+    background: #d32f2f;
+    color: #fff;
+    font-size: 12px;
+    height: 30px;
+    z-index: 100;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer,
+.footer * {
+    color: #fff !important;
 }
